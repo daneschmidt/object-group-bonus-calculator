@@ -31,6 +31,7 @@ const employees = [
   }
 ];
 
+
 // YOU SHOULD NOT NEED TO CHANGE ANYTHING ABOVE THIS POINT
 
 // Take small steps! Don't write a for loop and two functions that do all of the calculations right away.
@@ -40,4 +41,98 @@ const employees = [
 // This is not a race. Everyone on your team should understand what is happening.
 // Ask questions when you don't.
 
-console.log( employees );
+
+const bonusInfo = [];
+
+function makeInfo(){
+  const finishedBonus = {
+    name:'',
+    percent:'',
+    totalCompensation:'',
+    totalBonus:'',
+  }
+  return finishedBonus;
+}
+
+function calculateBonus(info){
+  for(let i = 0; i < info.length; i++){
+    let employee = info[i];
+    if(info.reviewRating == 5){
+      return true;
+    } else {
+      return false;
+    }
+
+
+
+    const processedBonus = makeInfo();
+    bonusInfo.push(processedBonus);
+  }
+}
+
+calculateBonus(employees);
+console.log(bonusInfo);
+
+// for (let i = 0; i < employees.length; i++) {
+//   let employee = employees[i];
+//   bonusPercent(employee);
+//   console.log(employee);
+// }
+
+
+// function bonusPercent(contents){
+
+
+
+
+
+
+  // const name = contents.name;
+  // const employeeNumber = contents.employeeNumber;
+  // const annualSalary = contents.annualSalary;
+  // const reviewRating = contents.reviewRating;
+  
+//   if(reviewRating = 5){
+//     console.log('10%');
+//   }else if(reviewRating = 4){
+//   console.log('6%');       
+//   }else if(reviewRating = 3){
+//   console.log('4%');return '4%';
+//   }else if(reviewRating <= 2){
+//   console.log('0%');
+//   }
+// }
+// // const = newObject [
+
+//     name: employees.name
+//     employeeNumber: 
+//     annualSalary: 
+//     reviewRating:
+  // ,
+
+// function employeeBonus(employee){
+//   const twoBonus = employeeBonus.annualSalary * 0;
+//   const threeBonus = employees.annualSalary * .04;
+//   const fourBonus = employees.annualSalary * .06;
+//   const fiveBonus = employees.annualSalary * .10;
+
+//   if(employee.reviewRating = 5){
+//     employee.annualSalary = employee.annualSalary * .1;
+//   } else{
+//     console.log('naaaaaah brah');
+//   }
+
+//   console.log(employeeBonus(employees));
+
+// }
+
+
+
+
+
+// SCOTT WROTE BELOW
+// //
+// for (let i = 0; i < employees.length; i++) {
+//   let employee = employees[i];
+//   employeeBonus(employee);
+// }
